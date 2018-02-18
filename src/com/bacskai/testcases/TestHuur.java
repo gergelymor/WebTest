@@ -31,7 +31,6 @@ public class TestHuur extends QuickSearchCommon{
 	
 	public void verifyElementsInitialPresence(){
 		goToSelf(href);
-		System.out.println(sharedDriver.findElements(koopTabButton).size());
 		Assert.assertTrue(sharedDriver.findElements(koopTabButton).size() == 1);
 		Assert.assertTrue(sharedDriver.findElements(huurTabButton).size() == 1);
 		Assert.assertTrue(sharedDriver.findElements(nieuwBouwTabButton).size() == 1);
